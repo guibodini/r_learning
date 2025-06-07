@@ -212,3 +212,6 @@ table1 %>%
   pivot_longer(cols = c(cases, population), 
                names_to = "variable", 
                values_to = "total")
+
+stringr::str_splt(table3$rate, "/", simplify = T) %>%
+  as.data.frame()
